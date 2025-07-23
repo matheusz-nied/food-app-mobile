@@ -1,5 +1,5 @@
 import { images } from "@/constants";
-// import useAuthStore from "@/store/auth.store";
+import useAuthStore from "@/store/auth.store";
 import { TabBarIconProps } from "@/type";
 import cn from "clsx";
 import { Redirect, Tabs } from "expo-router";
@@ -15,9 +15,7 @@ const TabBarIcon = ({ focused, icon, title }: TabBarIconProps) => (
 )
 
 export default function TabLayout() {
-    // const { isAuthenticated } = useAuthStore();
-    const  isAuthenticated  = false;
-    console.log(isAuthenticated)
+    const { isAuthenticated } = useAuthStore();
 
     if(!isAuthenticated) return <Redirect href="/sign-in" />
 
@@ -26,10 +24,10 @@ export default function TabLayout() {
                 headerShown: false,
                 tabBarShowLabel: false,
                 tabBarStyle: {
-                    borderTopLeftRadius: 50,
-                    borderTopRightRadius: 50,
-                    borderBottomLeftRadius: 50,
-                    borderBottomRightRadius: 50,
+                    borderTopLeftRadius: 32,
+                    borderTopRightRadius: 32,
+                    borderBottomLeftRadius: 32,
+                    borderBottomRightRadius: 32,
                     marginHorizontal: 20,
                     height: 80,
                     position: 'absolute',
