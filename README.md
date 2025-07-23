@@ -1,50 +1,115 @@
-# Welcome to your Expo app 👋
+# 🍔 Fast Food App - Aplicativo de Delivery Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <img src="screenshots/banner.png" alt="Fast Food App Banner" width="100%">
+</p>
 
-## Get started
+## 📱 Sobre o Projeto
 
-1. Install dependencies
+O Fast Food App é uma aplicação mobile completa para delivery de comida, desenvolvida com React Native e Expo. O aplicativo oferece uma experiência de usuário fluida e intuitiva, permitindo que os usuários naveguem pelo cardápio, personalizem seus pedidos, gerenciem seu carrinho de compras e realizem pedidos de forma rápida e eficiente.
 
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- **TypeScript**: Tipagem estática para código mais seguro
+- **React Native**: Framework para desenvolvimento mobile
+- **Expo**: Plataforma para desenvolvimento React Native
+- **NativeWind/TailwindCSS**: Estilização moderna e responsiva
+- **Expo Router**: Sistema de navegação baseado em arquivos
+- **Zustand**: Gerenciamento de estado global
+
+### Backend e Autenticação
+- **Appwrite**: Backend-as-a-Service para autenticação e banco de dados
+
+
+
+## ✨ Funcionalidades
+
+### Autenticação de Usuários
+- Sistema completo de cadastro e login
+- Gerenciamento de sessão com Appwrite
+- Perfil de usuário personalizado
+
+### Navegação e Descoberta
+- Pesquisa de itens do cardápio
+- Filtragem por categorias
+- Interface de usuário intuitiva e responsiva
+
+### Gerenciamento de Pedidos
+- Adição de itens ao carrinho
+- Personalização de pedidos
+- Cálculo automático de preços
+
+### Perfil e Configurações
+- Visualização de informações do usuário
+- Logout seguro
+
+## 📸 Screenshots
+
+<!-- Substitua os comentários abaixo por screenshots reais do seu aplicativo -->
+
+### Tela de Login e Cadastro
+<p align="center">
+  <img src="screenshots/1.jpg" alt="Tela de Login" width="30%">
+  <img src="screenshots/2.jpg" alt="Tela de Cadastro" width="30%">
+</p>
+
+### Home e Pesquisa
+<p align="center">
+  <img src="screenshots/3.jpg" alt="Tela Inicial" width="30%">
+  <img src="screenshots/4.jpg" alt="Tela de Pesquisa" width="30%">
+  <img src="screenshots/5.jpg" alt="Tela de Pesquisa" width="30%">
+</p>
+
+### Carrinho e Perfil
+<p align="center">
+  <img src="screenshots/6.jpg" alt="Carrinho de Compras" width="30%">
+  <img src="screenshots/7.jpg" alt="Perfil do Usuário" width="30%">
+</p>
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+
+- Node.js (versão 16 ou superior)
+- npm ou yarn
+- Expo CLI
+- Conta no Appwrite (para backend)
+
+### Instalação
+
+1. Clone o repositório
    ```bash
-   npm install
+   git clone https://github.com/seu-usuario/fast-food-app.git
+   cd fast-food-app
    ```
 
-2. Start the app
+2. Instale as dependências
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
+3. Configure as variáveis de ambiente
+   - Crie um arquivo `.env` na raiz do projeto
+   - Adicione suas credenciais do Appwrite:
+   ```
+   EXPO_PUBLIC_APPWRITE_ENDPOINT=seu-endpoint
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=seu-project-id
+   ```
+
+4. Inicie o aplicativo
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## 📬 Contato
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Seu Nome - [matheusz.nied@gmail.com](mailto:matheusz.nied@gmail.com)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Link do Projeto: [https://github.com/kaizen/fast-food-app](https://github.com/kaizen/fast-food-app)
 
-## Get a fresh project
+---
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<p align="center">Desenvolvido com ❤️ e ☕</p>
