@@ -50,6 +50,8 @@ export default function Index() {
   
         </View>
         }
+        
+        
         keyExtractor={(item, index) => index.toString()}
       />
     </SafeAreaView>

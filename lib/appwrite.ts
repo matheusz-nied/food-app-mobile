@@ -8,10 +8,10 @@ export const appwriteConfig = {
     databaseId: '687f658d0018f0e855ad',
     bucketId: '68643e170015edaa95d7',
     userCollectionId: '687f65e600312a245a03',
-    categoriesCollectionId: '68643a390017b239fa0f',
-    menuCollectionId: '68643ad80027ddb96920',
-    customizationsCollectionId: '68643c0300297e5abc95',
-    menuCustomizationsCollectionId: '68643cd8003580ecdd8f'
+    categoriesCollectionId: '',
+    menuCollectionId: '',
+    customizationsCollectionId: '',
+    menuCustomizationsCollectionId: ''
 }
 
 export const client = new Client();
