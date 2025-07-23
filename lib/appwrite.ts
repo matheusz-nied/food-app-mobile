@@ -56,8 +56,17 @@ export const signIn = async ({ email, password }: SignInParams) => {
 
 export const getCurrentUser = async () => {
     try {
+        // First check if there's an active session
+        try {
+            const session = await account.getSession('current');
+            if (!session) return null;
+        } catch (sessionError) {
+            // If there's no active session, return null instead of throwing an error
+            return null;
+        }
+        
         const currentAccount = await account.get();
-        if(!currentAccount) throw Error;
+        if(!currentAccount) return null;
 
         const currentUser = await databases.listDocuments(
             appwriteConfig.databaseId,
@@ -65,12 +74,12 @@ export const getCurrentUser = async () => {
             [Query.equal('accountId', currentAccount.$id)]
         )
 
-        if(!currentUser) throw Error;
+        if(!currentUser) return null;
 
         return currentUser.documents[0];
     } catch (e) {
-        console.log(e);
-        throw new Error(e as string);
+        console.log('getCurrentUser error:', e);
+        return null; // Return null instead of throwing an error
     }
 }
 
