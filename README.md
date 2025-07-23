@@ -6,7 +6,7 @@
 
 ## 📱 Sobre o Projeto
 
-O Fast Food App é uma aplicação mobile completa para delivery de comida, desenvolvida com React Native e Expo. O aplicativo oferece uma experiência de usuário fluida e intuitiva, permitindo que os usuários naveguem pelo cardápio, personalizem seus pedidos, gerenciem seu carrinho de compras e realizem pedidos de forma rápida e eficiente.
+O Fast Food App é uma aplicação mobile completa para delivery de comida, desenvolvida com **React Native e Expo**. O aplicativo oferece uma experiência de usuário fluida e intuitiva, permitindo que os usuários naveguem pelo cardápio, personalizem seus pedidos, gerenciem seu carrinho de compras e realizem pedidos de forma rápida e eficiente.
 
 ## 🛠️ Tecnologias Utilizadas
 
