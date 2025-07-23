@@ -6,12 +6,12 @@ export const appwriteConfig = {
     projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!,
     platform: "com.nied.foodordering",
     databaseId: '687f658d0018f0e855ad',
-    bucketId: '68643e170015edaa95d7',
+    bucketId: '68802c430036c7f75901',
     userCollectionId: '687f65e600312a245a03',
-    categoriesCollectionId: '',
-    menuCollectionId: '',
-    customizationsCollectionId: '',
-    menuCustomizationsCollectionId: ''
+    categoriesCollectionId: '688027b500219ab29e27',
+    menuCollectionId: '6880280e0010a6c2e33b',
+    customizationsCollectionId: '68802820000ceacb870a',
+    menuCustomizationsCollectionId: '68802a5e003863ecc772'
 }
 
 export const client = new Client();
